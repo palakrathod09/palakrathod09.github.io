@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Palak Vijay Rathod | Cyber Security & Digital Forensics</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#f2f5f7; --surface:#ffffff; --ink:#14213d; --muted:#51607a; --line:#d5dde6;
+  --accent:#0d6e7d; --tag:#f6c445; --tag-ink:#3b2d00;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1724; --surface:#17223a; --ink:#e8eef7; --muted:#9db0cc; --line:#2a3957;
+    --accent:#52c3d3; --tag:#f6c445; --tag-ink:#3b2d00; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1724; --surface:#17223a; --ink:#e8eef7; --muted:#9db0cc; --line:#2a3957;
+  --accent:#52c3d3; --tag:#f6c445; --tag-ink:#3b2d00; color-scheme:dark;
+}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);
+  font:400 1rem/1.6 "Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:2.5rem 1.25rem 4rem;
+  display:grid;grid-template-columns:16rem 1fr;gap:3rem}
+aside{align-self:start;position:sticky;top:2rem}
+.photo{width:9rem;height:9rem;border-radius:50%;object-fit:cover;border:3px solid var(--surface);
+  box-shadow:0 0 0 2px var(--accent);display:block;margin-bottom:1.25rem}
+h1{font-size:2.1rem;font-weight:700;letter-spacing:-.01em}
+.role{color:var(--muted);margin:.5rem 0 1.25rem}
+.contact{list-style:none;padding:0;margin:0;display:grid;gap:.4rem;font-size:.95rem}
+.contact span{color:var(--muted);display:block;font-size:.8rem}
+main section{margin-bottom:2.75rem}
+h2{font-size:1.4rem;font-weight:700;padding-bottom:.5rem;border-bottom:2px solid var(--ink);margin-bottom:1rem}
+p{margin:0 0 .8rem;max-width:42rem}
+.edu{display:grid;gap:.9rem}
+.edu div{display:grid;grid-template-columns:1fr auto;gap:.25rem 1rem;padding-bottom:.9rem;border-bottom:1px solid var(--line)}
+.edu strong{font-weight:600}
+.edu small{color:var(--muted);font-size:.9rem;grid-column:1}
+.score{grid-row:1;grid-column:2;font-weight:600;color:var(--accent)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.25rem}
+.skills h3{font-size:1rem;margin-bottom:.4rem}
+.skills ul,.plain{margin:0;padding-left:1.1rem;color:var(--ink)}
+.skills li,.plain li{margin-bottom:.25rem}
+.note{color:var(--muted);font-size:.9rem;margin-top:.9rem}
+.tagcard{position:relative;background:var(--surface);border:1px solid var(--line);
+  border-left:10px solid var(--tag);border-radius:4px 14px 14px 4px;padding:1.25rem 1.25rem 1.25rem 1.5rem;max-width:40rem}
+.tagcard::before{content:"";position:absolute;left:-6px;top:50%;width:.7rem;height:.7rem;margin-top:-.35rem;
+  border-radius:50%;background:var(--bg);box-shadow:inset 0 0 0 2px var(--tag-ink)}
+.tagcard h3{font-size:1.15rem;margin-bottom:.35rem}
+.tagcard .meta{color:var(--muted);font-size:.92rem;margin-bottom:.6rem}
+@media (max-width:760px){
+  .wrap{grid-template-columns:1fr;gap:2rem;padding-top:1.5rem}
+  aside{position:static}
+}
+
+.skip-link{position:absolute;left:-9999px;top:1rem;background:var(--surface);color:var(--ink);padding:.6rem 1rem;z-index:10}
+.skip-link:focus{left:1rem}
+.site-footer{max-width:62rem;margin:0 auto;padding:0 1.25rem 2rem;color:var(--muted);font-size:.9rem;text-align:center}
+.site-footer p{margin:.25rem auto}
+.tagcard a{font-weight:600;text-underline-offset:3px}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="wrap">
+  <aside>
+    <img class="photo" alt="Palak Rathod" src="data:image/jpeg;base64,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">
+    <h1>Palak Vijay Rathod</h1>
+    <p class="role">M.Sc. Cyber Security and Digital Forensics<br>Seeking an internship</p>
+    <ul class="contact">
+      <li><span>Location</span>Ahmedabad, Gujarat</li>
+      <li><span>Email</span><a href="mailto:palakvrathod@gmail.com">palakvrathod@gmail.com</a></li>
+      <li><span>Phone</span><a href="tel:+919265278814">+91 92652 78814</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/palak-rathod-5828a9280/" target="_blank" rel="noopener noreferrer">linkedin.com/in/palak-rathod-5828a9280</a></li>
+      <li><span>GitHub</span><a href="https://github.com/palakrathod09" target="_blank" rel="noopener noreferrer">github.com/palakrathod09</a></li>
+    </ul>
+  </aside>
+
+  <main id="main-content">
+    <section>
+      <h2>About me</h2>
+      <p>I am a Bachelor of Computer Application graduate from Saurashtra University, now studying M.Sc. in Cyber Security and Digital Forensics at Silver Oak University. I have attended a live programme on cyber attacks and digital safety, and I keep building my skills with hands-on labs on TryHackMe, covering Linux and the basics of offensive and defensive security.</p>
+      <p>I am looking for an internship where I can learn from experienced professionals, support the team with careful and reliable work, and build practical skills in cyber security and digital evidence handling. I am consistent, detail-oriented and keen to learn.</p>
+    </section>
+
+    <section>
+      <h2>Certificate</h2>
+      <div class="tagcard">
+        <h3>Certificate of Achievement: Live Cyber Attacks &amp; Digital Safety</h3>
+        <p class="meta">Demmisto Technologies Pvt. Ltd. with Silver Oak University, 1 April 2026</p>
+        <p>I took part in a live programme on how cyber attacks happen and how to stay safe online. The organisers recognised my dedication and interest in cyber security.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="tagcard">
+        <h3>Privacy Risk Scanner for Documents</h3>
+        <p class="meta">Python · Flask · Regex · Document Parsing · Privacy &amp; Data Protection | Working prototype</p>
+        <p>Worked with a ready-made Python Flask application designed to screen documents for potentially sensitive information and display privacy-risk findings.</p>
+        <p><strong>My involvement</strong></p>
+        <ul class="plain">
+          <li>Set up and ran the existing application in a local development environment.</li>
+          <li>Explored the project structure, including the Python application, templates and static resources.</li>
+          <li>Reviewed the pattern-based scanning workflow and the way findings are presented in the results dashboard.</li>
+          <li>Explored the application's risk categories, severity labels and overall risk-score output.</li>
+        </ul>
+        <p><strong>Project technologies:</strong> Python, Flask, regular expressions, HTML, CSS and JavaScript.</p>
+        <p><strong>Project repository:</strong> <a href="https://github.com/palakrathod09/privacy-risk-scanner" target="_blank" rel="noopener noreferrer">View Privacy Risk Scanner on GitHub</a></p>
+        <p class="note">This is an exploration and setup of an existing project, not a claim of developing the application from scratch. Project functionality should be demonstrated and verified before describing individual features as implemented.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="edu">
+        <div><strong>M.Sc. in Cyber Security and Digital Forensics</strong><span class="score">Pursuing</span><small>Silver Oak University</small></div>
+        <div><strong>Bachelor of Computer Application</strong><span class="score">67%</span><small>Saurashtra University, 2025</small></div>
+        <div><strong>12th, CBSE</strong><span class="score">65%</span><small>Kendriya Vidyalaya INS Valsura, 2022</small></div>
+        <div><strong>10th, CBSE</strong><span class="score">56%</span><small>Kendriya Vidyalaya INS Valsura, 2020</small></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div><h3>Cyber security (basic)</h3><ul><li>Common attacks: phishing, malware, social engineering</li><li>Digital safety and password hygiene</li></ul></div>
+        <div><h3>Digital forensics (basic)</h3><ul><li>What counts as digital evidence</li><li>Data recovery and the investigation process</li></ul></div>
+        <div><h3>Computer fundamentals</h3><ul><li>Networking basics</li><li>Windows and basic Linux</li><li>Databases and programming basics</li></ul></div>
+        <div><h3>Tools and soft skills</h3><ul><li>MS Word, Excel, PowerPoint</li><li>Communication and teamwork</li><li>Time management</li></ul></div>
+      </div>
+      <p class="note">Languages: English, Hindi, Gujarati</p>
+    </section>
+
+    <section>
+      <h2>Hands-on practice</h2>
+      <p>I practise on <a href="https://tryhackme.com/p/palakvrathod">TryHackMe</a>, a platform with guided cyber security labs. Rooms I have completed:</p>
+      <ul class="plain">
+        <li>Linux Fundamentals Part 1</li>
+        <li>Defensive Security Intro</li>
+        <li>Offensive Security Intro</li>
+        <li>Search Skills</li>
+        <li>c4ptur3-th3-fl4g</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What I want to learn</h2>
+      <ul class="plain">
+        <li>How security teams spot and respond to incidents</li>
+        <li>How digital evidence is collected and handled</li>
+        <li>Network and information security in practice</li>
+      </ul>
+    </section>
+  </main>
+</div>
+<footer class="site-footer">
+  <p>Palak Vijay Rathod · Cyber Security &amp; Digital Forensics</p>
+  <p><a href="mailto:palakvrathod@gmail.com">Contact me</a> · <a href="https://github.com/palakrathod09" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/palak-rathod-5828a9280/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+</footer>
+</body>
+</html>
